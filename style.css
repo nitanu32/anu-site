@@ -28,7 +28,7 @@ header {
 
 .name-block {
   flex: 1;                  /* make name column narrower */
-  max-width: 35%;           /* cap width */
+  max-width: 45%;           /* cap width */
   padding-right: 1rem;
   margin-right: 1rem;
   border-right: 1px solid rgba(18, 52, 86, 0.3); /* vertical divider */
@@ -47,7 +47,7 @@ h1 {
 
 .bio {
   flex: 2;                  /* give bio more space */
-  min-width: 65%;           /* ensure it expands wider */
+  min-width: 55%;           /* ensure it expands wider */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
