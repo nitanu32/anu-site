@@ -1,58 +1,89 @@
+:root {
+  --color-black: #000000;
+  --color-white: #f9f7f4; /* or #ffffff if you want crisp */
+  --color-orange: #d66b3d;
+  --color-purple: #4d0b99;
+  --color-green: #2f5d50;
+  --color-royal: #151B54;
+  --color-ocean: #123456;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
-  color: #111;
-  background: #fff;
+  color: var(--color-black);
+  background: var(--color-white);
   margin: 2rem auto;
   max-width: 900px;
   line-height: 1.5;
 }
 
-header, footer {
+/* --- Header --- */
+header {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(18, 52, 86, 0.3); /* bottom divider */
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
-}
-
-nav a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: #111;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  border-right: 1px solid rgba(18, 52, 86, 0.3); /* vertical divider */
 }
 
 .highlight {
-  color: #d14; /* pick any accent color you like */
+  color: var(--color-orange);
   font-weight: 700;
 }
 
 .bio {
   font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-  max-width: 35ch; /* keeps bio roughly same width as your name */
-  margin-top: 0.5rem;
+  color: var(--color-black);
+  line-height: 1.4;
+  flex: 1;
 }
 
+.bio p:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(18, 52, 86, 0.3); /* divider under first line */
+}
+
+.bio p {
+  margin: 0.2rem 0;
+}
+
+/* --- Navigation --- */
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--color-royal);
+}
+
+nav a:hover {
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+
+/* --- Sections --- */
 section {
   margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 1.2rem;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: .5rem;
+  border-bottom: 1px solid rgba(18, 52, 86, 0.3);
+  margin-bottom: 0.5rem;
 }
 
+/* --- Tables --- */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -61,14 +92,15 @@ table {
 
 th, td {
   text-align: left;
-  padding: .5rem;
-  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(18, 52, 86, 0.3);
 }
 
 tr:nth-child(even) {
-  background: #f9f9f9;
+  background: rgba(47, 93, 80, 0.05); /* subtle green tint */
 }
 
+/* --- Grid Layouts --- */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -79,6 +111,11 @@ tr:nth-child(even) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(18, 52, 86, 0.3);
   padding: 1rem;
+}
+
+.highlights div {
+  padding-top: 0.5rem;
+  border-top: 2px solid var(--color-orange); /* accent divider per block */
 }
