@@ -20,19 +20,23 @@ body {
 /* --- Header --- */
 header {
   display: flex;
-  align-items: flex-start; /* align top edges */
+  align-items: flex-start;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(18, 52, 86, 0.3);
+}
+
+.name-block {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid rgba(18, 52, 86, 0.3); /* divider spans full header height */
+  flex: 0 0 auto; /* shrink-wrap to text width */
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
-  margin: 0;
-  padding-right: 0.5rem;
-  border-right: 1px solid rgba(18, 52, 86, 0.3);
 }
 
 .highlight {
@@ -43,11 +47,12 @@ h1 {
 .bio {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* evenly spread lines top-to-bottom */
+  justify-content: space-between; /* evenly spread lines */
   font-size: 1rem;
   color: var(--color-black);
   line-height: 1.4;
-  flex: 1; /* make bio column stretch same height as h1 column */
+  flex: 1; /* bio takes remaining space */
+  margin-left: 1rem; /* clean gap after divider */
 }
 
 .bio p:first-child {
