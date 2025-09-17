@@ -43,12 +43,11 @@ h1 {
 .bio {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* group lines at the top */
+  justify-content: space-between; /* evenly spread lines top-to-bottom */
   font-size: 1rem;
   color: var(--color-black);
   line-height: 1.4;
-  max-height: 3.2rem; /* keeps bio block height roughly equal to h1 */
-  overflow: hidden; /* hides any spillover */
+  flex: 1; /* make bio column stretch same height as h1 column */
 }
 
 .bio p:first-child {
@@ -60,7 +59,7 @@ h1 {
 }
 
 .bio p {
-  margin: 0.2rem 0;
+  margin: 0;
 }
 
 /* --- Navigation --- */
