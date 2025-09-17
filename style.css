@@ -35,10 +35,12 @@ nav a:hover {
   font-weight: 700;
 }
 
-.tagline {
-  margin-top: .5rem;
+.bio {
   font-size: 1rem;
-  color: #555;
+  color: #333;
+  line-height: 1.6;
+  max-width: 35ch; /* keeps bio roughly same width as your name */
+  margin-top: 0.5rem;
 }
 
 section {
