@@ -27,10 +27,11 @@ header {
 }
 
 .name-block {
+  flex: 1;                  /* make name column narrower */
+  max-width: 35%;           /* cap width */
   padding-right: 1rem;
   margin-right: 1rem;
-  border-right: 1px solid rgba(18, 52, 86, 0.3); /* divider spans full header height */
-  flex: 0 0 auto; /* shrink-wrap to text width */
+  border-right: 1px solid rgba(18, 52, 86, 0.3); /* vertical divider */
 }
 
 h1 {
@@ -45,16 +46,15 @@ h1 {
 }
 
 .bio {
+  flex: 2;                  /* give bio more space */
+  min-width: 65%;           /* ensure it expands wider */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* no weird stretching */
+  justify-content: flex-start;
   font-size: 1rem;
   color: var(--color-black);
   line-height: 1.5;
-
-  flex: 2; /* give bio more space relative to the name */
-  margin-left: 2rem; /* add breathing room */
-  max-width: none; /* remove artificial width cap */
+  margin-left: 2rem;        /* breathing room after divider */
 }
 
 .bio p:first-child {
