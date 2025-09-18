@@ -6,6 +6,18 @@
   --color-green: #2f5d50;
   --color-royal: #151B54;
   --color-ocean: #123456;
+
+  /* Derived / mixed colors */
+  /* Fallback first (rgba), then color-mix */
+  --line: rgba(18, 52, 86, 0.28);
+  --line: color-mix(in srgb, var(--color-ocean) 28%, transparent);
+
+  --stripe: rgba(47, 93, 80, 0.06);
+  --stripe: color-mix(in srgb, var(--color-green) 6%, transparent);
+
+  --heading: var(--color-purple);
+  --link: var(--color-royal);
+  --link-hover: var(--color-orange);
 }
 
 body {
