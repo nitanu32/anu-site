@@ -126,3 +126,45 @@ tr:nth-child(even) {
   padding-top: 0.5rem;
   border-top: 2px solid var(--color-orange); /* accent divider per block */
 }
+
+.highlights div {
+  padding-top: 0.5rem;
+  border-top: 2px solid var(--color-orange); /* accent divider per block */
+}
+
+/* --- Footer --- */
+footer {
+  display: flex;
+  justify-content: space-between; /* left/right split */
+  align-items: flex-start;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(18,52,86,0.3);
+}
+
+.footer-left {
+  max-width: 60%; /* prevents postscript list from stretching too far */
+}
+
+.footer-right a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--color-royal);
+}
+
+.footer-right a:hover {
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+
+.postscript-list {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.postscript-list li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+  color: var(--color-black);
+}
