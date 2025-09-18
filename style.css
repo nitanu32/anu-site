@@ -127,11 +127,6 @@ tr:nth-child(even) {
   border-top: 2px solid var(--color-orange); /* accent divider per block */
 }
 
-.highlights div {
-  padding-top: 0.5rem;
-  border-top: 2px solid var(--color-orange); /* accent divider per block */
-}
-
 /* --- Footer --- */
 footer {
   display: flex;
@@ -161,6 +156,15 @@ footer {
   list-style-type: disc;
   padding-left: 1.2rem;
   margin: 0.5rem 0;
+
+  max-height: 0;            /* start collapsed */
+  overflow: hidden;         /* hide content when collapsed */
+  opacity: 0;               /* invisible when collapsed */
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+}
+
+.postscript-list.open {
+  opacity: 1;
 }
 
 .postscript-list li {
