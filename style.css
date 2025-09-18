@@ -52,6 +52,12 @@ h1 {
   line-height: 1.2; /* spacing between lines in name */
 }
 
+/* Use Times New Roman for all headings */
+h1, h2, h3, h4 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
 .highlight {
   color: var(--color-orange);
   font-weight: 700;
