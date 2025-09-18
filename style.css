@@ -20,14 +20,21 @@
   --link-hover: var(--color-orange);
 }
 
+/* Body text */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Arimo', Arial, sans-serif;
   color: var(--color-black);
   background: var(--color-white);
   margin: 2rem auto;
   max-width: 900px;
   line-height: 1.5;
 }
+
+/* Headers */
+h1, h2, h3, h4 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 /* --- Header --- */
 header {
@@ -51,12 +58,6 @@ h1 {
   margin: 0;
   line-height: 1.2; /* spacing between lines in name */
 }
-
-/* Use Times New Roman for all headings */
-h1, h2, h3, h4 {
-  font-family: 'Times New Roman', Times, serif;
-}
-
 
 .highlight {
   color: var(--color-orange);
