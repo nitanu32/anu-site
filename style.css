@@ -87,6 +87,8 @@ h1 {
 
 
 /* --- Navigation --- */
+/* --- (not being used now, but for later) --- */
+
 nav a {
   margin-left: 1rem;
   text-decoration: none;
@@ -153,23 +155,25 @@ footer {
   align-items: flex-start;
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(18,52,86,0.3);
+  border-top: 1px solid var(--line);
 }
 
 .footer-left {
   max-width: 60%; /* prevents postscript list from stretching too far */
 }
 
+/* Contact links (right side of footer) */
 .footer-right a {
   margin-left: 1rem;
   text-decoration: none;
-  color: var(--color-royal);
+  color: var(--link);
 }
 
 .footer-right a:hover {
-  color: var(--color-orange);
+  color: var(--link-hover);
   text-decoration: underline;
 }
+
 
 .postscript-list {
   list-style-type: disc;
