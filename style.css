@@ -172,3 +172,18 @@ footer {
   line-height: 1.4;
   color: var(--color-black);
 }
+
+#postscript-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;              /* use the same font as body */
+  color: var(--color-royal);  /* or var(--color-black) for plain text */
+  cursor: pointer;            /* still shows a pointer so people know it’s clickable */
+}
+
+#postscript-toggle:hover {
+  color: var(--color-orange); /* subtle hover effect */
+}
+
